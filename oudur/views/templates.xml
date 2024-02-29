@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+	    <template id="listing">
+		    <div id="wrap" class="container">
+			 <h1> Eggs </h1>
+			    <t t-foreach="objects" t-as="object">
+			      <div class="row">
+				      Egg S/N: <span t-field="object.serial_number" />  Harvest Date: <span t-field="object.harvest_date" />
+			      </div>
+			    </t>
+	    	     </div>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,55 @@
+<odoo>
+  <data>
+	<record id="seq_egg_serial_number" model="ir.sequence">
+		<field name="name">Egg Serial Number</field>
+		<field name="code">egg.serial</field>
+		<field name="prefix">EGG</field>
+		<field name="padding">5</field>
+	</record>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="oudur.list">
+      <field name="name">oudur list</field>
+      <field name="model">oudur.egg</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="serial_number"/>
+          <field name="harvest_date"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="oudur.action_window">
+      <field name="name">oudur window</field>
+      <field name="res_model">oudur.egg</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="oudur.action_server">
+      <field name="name">oudur server</field>
+      <field name="model_id" ref="model_oudur_oudur"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+    <menuitem name="Eggs" id="oudur.menu_root"/>
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="oudur.menu_1" parent="oudur.menu_root"/>
+    <menuitem name="Menu 2" id="oudur.menu_2" parent="oudur.menu_root"/>
+-->
+    <!-- actions -->
+    <menuitem name="List" id="oudur.menu_1_list" parent="oudur.menu_root"
+              action="oudur.action_window"/>
+  </data>
+</odoo>
