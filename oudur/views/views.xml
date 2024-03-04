@@ -10,11 +10,12 @@
 		<field name="name">oudur kanban</field>
 		<field name="model">oudur.egg</field>
 		<field name="arch" type="xml">
-			<kanban>
+			<kanban default_group_by="state">
 				<templates>
 					<t t-name="kanban-box">
 						<div>
 							<field name="serial_number" />
+							<field name="size" />
 						</div>
 					</t>
 				</templates>
@@ -30,6 +31,24 @@
           <field name="serial_number"/>
           <field name="harvest_date"/>
         </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="oudur.form">
+      <field name="name">oudur form</field>
+      <field name="model">oudur.egg</field>
+      <field name="arch" type="xml">
+	      <form>
+		      <group>
+			  <field name="serial_number"/>
+			  <field name="harvest_date"/>
+		      </group>
+		      <group>
+			  <field name="state" />
+			  <field name="size" />
+			  <field name="cooking_time" />
+		      </group>
+	      </form>
       </field>
     </record>
 

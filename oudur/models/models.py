@@ -6,6 +6,7 @@ from odoo import models, fields, api
 class Egg(models.Model):
     _name = 'oudur.egg'
     _description = 'Date, size and other info about the boiled egg'
+    _rec_name = 'serial_number'
 
     harvest_date = fields.Date('Harvest Date', default=fields.Date.today())
     serial_number = fields.Char(
@@ -15,7 +16,7 @@ class Egg(models.Model):
     )
     state = fields.Selection(
             [('fresh', 'Fresh'), ('poached', 'Poached'), ('hard', 'Hard')],
-            'State', compute='_get_state', readonly=True
+            'State', compute='_get_state', readonly=True, store=True
     )
     size = fields.Selection([('m','M'),('l','L'),('xl','XL')], 'Size')
     cooking_time = fields.Integer('Cooking Time')
