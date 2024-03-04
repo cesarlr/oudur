@@ -6,6 +6,21 @@
 		<field name="prefix">EGG</field>
 		<field name="padding">5</field>
 	</record>
+	<record id="oudur.kanban" model="ir.ui.view">
+		<field name="name">oudur kanban</field>
+		<field name="model">oudur.egg</field>
+		<field name="arch" type="xml">
+			<kanban>
+				<templates>
+					<t t-name="kanban-box">
+						<div>
+							<field name="serial_number" />
+						</div>
+					</t>
+				</templates>
+			</kanban>
+		</field>
+	</record>
     <!-- explicit list view definition -->
     <record model="ir.ui.view" id="oudur.list">
       <field name="name">oudur list</field>
@@ -22,7 +37,7 @@
     <record model="ir.actions.act_window" id="oudur.action_window">
       <field name="name">oudur window</field>
       <field name="res_model">oudur.egg</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">kanban,tree,form</field>
     </record>
 
     <!-- server action to the one above -->
