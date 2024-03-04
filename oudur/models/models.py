@@ -15,7 +15,7 @@ class Egg(models.Model):
     )
     state = fields.Selection(
             [('fresh', 'Fresh'), ('poached', 'Poached'), ('hard', 'Hard')],
-            'State', compute='_get_state'
+            'State', compute='_get_state', readonly=True
     )
     size = fields.Selection([('m','M'),('l','L'),('xl','XL')], 'Size')
     cooking_time = fields.Integer('Cooking Time')
