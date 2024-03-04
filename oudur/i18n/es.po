@@ -1,0 +1,112 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oudur
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-04 09:50+0000\n"
+"PO-Revision-Date: 2024-03-04 09:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: oudur
+#: model:ir.model.fields,field_description:oudur.field_oudur_egg__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: oudur
+#: model:ir.model.fields,field_description:oudur.field_oudur_egg__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: oudur
+#: model:ir.model,name:oudur.model_oudur_egg
+msgid "Date, size and other info about the boiled egg"
+msgstr ""
+
+#. module: oudur
+#: model:ir.model.fields,field_description:oudur.field_oudur_egg__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: oudur
+#: model_terms:ir.ui.view,arch_db:oudur.listing
+msgid "Egg S/N:"
+msgstr ""
+
+#. module: oudur
+#: model:ir.ui.menu,name:oudur.menu_root
+#: model_terms:ir.ui.view,arch_db:oudur.listing
+msgid "Eggs"
+msgstr ""
+
+#. module: oudur
+#: model:ir.model.fields.selection,name:oudur.selection__oudur_egg__state__fresh
+msgid "Fresh"
+msgstr "Fresco"
+
+#. module: oudur
+#: model:ir.model.fields.selection,name:oudur.selection__oudur_egg__state__hard
+msgid "Hard"
+msgstr "Duro"
+
+#. module: oudur
+#: model:ir.model.fields,field_description:oudur.field_oudur_egg__harvest_date
+msgid "Harvest Date"
+msgstr ""
+
+#. module: oudur
+#: model_terms:ir.ui.view,arch_db:oudur.listing
+msgid "Harvest Date:"
+msgstr ""
+
+#. module: oudur
+#: model:ir.model.fields,field_description:oudur.field_oudur_egg__id
+msgid "ID"
+msgstr ""
+
+#. module: oudur
+#: model:ir.model.fields,field_description:oudur.field_oudur_egg____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: oudur
+#: model:ir.model.fields,field_description:oudur.field_oudur_egg__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: oudur
+#: model:ir.model.fields,field_description:oudur.field_oudur_egg__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: oudur
+#: model:ir.ui.menu,name:oudur.menu_1_list
+msgid "List"
+msgstr ""
+
+#. module: oudur
+#: model:ir.model.fields.selection,name:oudur.selection__oudur_egg__state__poached
+msgid "Poached"
+msgstr "Pochado"
+
+#. module: oudur
+#: model:ir.model.fields,field_description:oudur.field_oudur_egg__serial_number
+msgid "Serial Number"
+msgstr ""
+
+#. module: oudur
+#: model:ir.model.fields,field_description:oudur.field_oudur_egg__state
+msgid "State"
+msgstr ""
+
+#. module: oudur
+#: model:ir.actions.act_window,name:oudur.action_window
+msgid "oudur window"
+msgstr ""
