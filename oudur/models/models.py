@@ -24,6 +24,7 @@ class Egg(models.Model):
     def _get_sequence(self):
        return self.env['ir.sequence'].next_by_code('egg.serial')
     
+    @api.depends('cooking_time', 'size')
     def _get_state(self):
         for egg in self:
             if egg.size == 'm':
